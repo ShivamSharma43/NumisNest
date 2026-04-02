@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* NumisNest Admin Portal - Dark Premium Theme with Gold/Bronze Accents */
+
+@layer base {
+  :root {
+    --background: 220 20% 97%;
+    --foreground: 220 30% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 30% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 30% 10%;
+
+    --primary: 35 80% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 15% 92%;
+    --secondary-foreground: 220 30% 10%;
+
+    --muted: 220 15% 92%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 28 70% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 35 80% 45%;
+
+    --radius: 0.5rem;
+
+    --gold: 43 74% 49%;
+    --gold-foreground: 0 0% 100%;
+    --bronze: 28 70% 45%;
+    --bronze-foreground: 0 0% 100%;
+    --copper: 20 60% 40%;
+    --copper-foreground: 0 0% 100%;
+
+    --sidebar-background: 220 20% 97%;
+    --sidebar-foreground: 220 30% 10%;
+    --sidebar-primary: 35 80% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 15% 92%;
+    --sidebar-accent-foreground: 220 30% 10%;
+    --sidebar-border: 220 15% 88%;
+    --sidebar-ring: 35 80% 45%;
+
+    --chart-1: 35 80% 45%;
+    --chart-2: 28 70% 50%;
+    --chart-3: 20 60% 40%;
+    --chart-4: 43 74% 49%;
+    --chart-5: 15 50% 35%;
+  }
+
+  .dark {
+    --background: 222 30% 8%;
+    --foreground: 40 20% 95%;
+
+    --card: 222 25% 11%;
+    --card-foreground: 40 20% 95%;
+
+    --popover: 222 25% 11%;
+    --popover-foreground: 40 20% 95%;
+
+    --primary: 43 74% 49%;
+    --primary-foreground: 222 30% 8%;
+
+    --secondary: 222 20% 16%;
+    --secondary-foreground: 40 20% 95%;
+
+    --muted: 222 20% 16%;
+    --muted-foreground: 220 15% 55%;
+
+    --accent: 28 70% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 222 20% 18%;
+    --input: 222 20% 18%;
+    --ring: 43 74% 49%;
+
+    --gold: 43 74% 49%;
+    --gold-foreground: 222 30% 8%;
+    --bronze: 28 70% 50%;
+    --bronze-foreground: 0 0% 100%;
+    --copper: 20 60% 45%;
+    --copper-foreground: 0 0% 100%;
+
+    --sidebar-background: 222 30% 6%;
+    --sidebar-foreground: 40 20% 90%;
+    --sidebar-primary: 43 74% 49%;
+    --sidebar-primary-foreground: 222 30% 8%;
+    --sidebar-accent: 222 20% 12%;
+    --sidebar-accent-foreground: 40 20% 95%;
+    --sidebar-border: 222 20% 15%;
+    --sidebar-ring: 43 74% 49%;
+
+    --chart-1: 43 74% 49%;
+    --chart-2: 28 70% 55%;
+    --chart-3: 20 60% 50%;
+    --chart-4: 35 80% 55%;
+    --chart-5: 15 50% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+@layer utilities {
+  .gold-gradient {
+    background: linear-gradient(135deg, hsl(var(--gold)) 0%, hsl(var(--bronze)) 100%);
+  }
+
+  .gold-text {
+    background: linear-gradient(135deg, hsl(var(--gold)) 0%, hsl(var(--bronze)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass-card {
+    @apply backdrop-blur-md bg-card/80 border border-border/50;
+  }
+}
